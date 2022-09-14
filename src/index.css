@@ -46,6 +46,10 @@ a:hover {
   background-color: gray;
 }
 
+img {
+  width: 50%;
+}
+
 .footer {
   background-color: gray;
   color: white;
