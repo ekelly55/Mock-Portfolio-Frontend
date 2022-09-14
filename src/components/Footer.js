@@ -1,5 +1,10 @@
 function Footer(props) {
-    return <h1>Footer</h1>;
+    return (
+
+      <div className="footer">
+      <p className = "footer-text">2022 scriptKeeper LLC</p>
+    </div>
+      )
   }
   
   export default Footer;
