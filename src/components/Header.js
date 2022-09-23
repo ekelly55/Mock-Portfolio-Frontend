@@ -15,13 +15,10 @@ function Header(props) {
       <h1>My Portfolio Page</h1>
       <nav className = "nav" style={navStyle}>
         <Link to="/">
-          <div>HOME</div>
+          <div>PROJECTS</div>
         </Link>
         <Link to="/about">
           <div>ABOUT</div>
-        </Link>
-        <Link to="/projects">
-          <div>PROJECTS</div>
         </Link>
       </nav>
     </header>
