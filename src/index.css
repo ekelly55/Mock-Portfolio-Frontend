@@ -5,17 +5,15 @@ html {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: fit-content;
-  color: #F8E9A1
+  background-color: #1a1a4a;
 }
 
-.root {
-  background-color: gray;
-}
+
 
 .app {
   height: 100%;
@@ -26,29 +24,41 @@ code {
     monospace;
 }
 
-.header {
-  background-color: #F76C6C;
-  color: white;
+.header h1{
+  background-color: #1a1a4a;
+  color: #F76C6C;
   height: 3%;
 }
 
-.nav {
-  background-color: #F76C6C;
+.nav h1{
+  background-color: #1a1a4a;
+  color: #F76C6C;
+}
+
+.link {
+  color: #F76C6C
 }
 
 a {
-  color: white;
+  color: #F76C6C;
   text-decoration: none;
   width: 7%;
   height: 100%;
 }
 
-a:hover {
-  background-color: gray;
+.link:hover {
+  background-color: #F8E9A1;
 }
 
+h1 {
+  color: #F8E9A1
+}
 img {
   width: 50%;
+}
+
+.button {
+  width: 100px;
 }
 
 .footer {

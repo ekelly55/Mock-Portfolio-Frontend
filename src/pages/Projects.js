@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import {Button, Alert, Breadcrumb} from 'react-bootstrap'
 
 function Projects(props) {
   // create state to hold projects
@@ -27,12 +28,16 @@ function Projects(props) {
       <div>
         <h1>{project.name}</h1>
         <img src={project.image} alt="game" />
-        <a href={project.git}>
-          <button>Github</button>
-        </a>
-        <a href={project.live}>
-          <button>live site</button>
-        </a>
+        <div className="link-buttons">
+        <Button className="button m-2" size="sm" as="a" href={project.git} variant="primary">
+          GitHub
+        </Button>
+     
+        <Button className="button" size="sm" as="a" href={project.live} variant="success">
+          Live Site
+        </Button>
+        </div>
+    
       </div>
     ));
   };
