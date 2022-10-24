@@ -10,6 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: fit-content;
+  color: #F8E9A1
 }
 
 .root {
@@ -26,13 +27,13 @@ code {
 }
 
 .header {
-  background-color: gray;
+  background-color: #F76C6C;
   color: white;
   height: 3%;
 }
 
 .nav {
-  background-color: black;
+  background-color: #F76C6C;
 }
 
 a {
