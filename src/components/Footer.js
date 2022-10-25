@@ -2,7 +2,7 @@ function Footer(props) {
     return (
 
       <div className="footer">
-      <p className = "footer-text">2022 scriptKeeper LLC</p>
+      <p className = "footer-text">Eamonn Kelly</p>
     </div>
       )
   }

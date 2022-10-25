@@ -25,45 +25,47 @@ function Projects(props) {
   // define a function that will return the JSX needed once we get the data
 
   return (
-    
+
     <div className="container">
       <div className="row">
 
         {projects ? projects.map((project) => {
           return (
-            
-            <div className="col-4">
 
-          <Card className="bg-dark text-white ">
-            <Card.Img className="w-50" src={project.image} alt="game" />
-            <Card.ImgOverlay>
-              <Card.Title>{project.name}</Card.Title>
-              <Card.Text>
-                Describe game here.
-              </Card.Text>
-            </Card.ImgOverlay>
-            <Card.Footer>
+            <div className="col-5 m-3 p-3 card-background rounded">
 
-            </Card.Footer>
-          </Card>
-          <div className="link-buttons">
-            <Button className="button m-2" size="sm" as="a" href={project.git} variant="primary">
-              GitHub
-            </Button>
+              <Card className="bg-dark text-white h-100 bg-image hover-overlay">
+                 
+                <Card.Img className="w-100" src={project.image} alt="game" />
+                <div className="mask">
+                  <Card.Title>{project.name}</Card.Title>
+                  <Card.Text>
+                    Describe game here.
+                  </Card.Text>
+                </div>
+               
+                <Card.Footer>
 
-            <Button className="button" size="sm" as="a" href={project.live} variant="success">
-              Live Site
-            </Button>
-          </div>
+              <div className="btn-group w-100 link-buttons" role="group">
+                <Button className="button w-25" as="a" href={project.git} variant="primary">
+                  GitHub
+                </Button>
 
-        </div>
-        )
-      }) : <h1>Loading...</h1>}
-      
-      
+                <Button className="button w-25" as="a" href={project.live} variant="success">
+                  Live Site
+                </Button>
+              </div>
+                </Card.Footer>
+              </Card>
+
+            </div>
+          )
+        }) : <h1>Loading...</h1>}
+
+
       </div>
-      </div>
-      
-      )
+    </div>
+
+  )
 }
 export default Projects;

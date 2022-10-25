@@ -20,7 +20,10 @@ function App(props) {
         <Route path="/" element={<Projects URL={URL} />} />
         <Route path="/about" element={<About URL={URL} />} />
       </Routes>
+      <div className="footer-container" style={{position: "fixed", left: 0, right: 0, bottom: 0}}>
+
       <Footer />
+      </div>
     </div>
   );
 }

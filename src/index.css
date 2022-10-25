@@ -1,5 +1,5 @@
 html {
-  height: fit-content;
+  height: 100vh;
 }
 
 body {
@@ -11,11 +11,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
   height: fit-content;
   background-color: #1a1a4a;
+  height: 100%
 }
 
+#root {
+  height: 100%;
+}
 
-
-.app {
+.App {
   height: 100%;
 }
 
@@ -24,19 +27,25 @@ code {
     monospace;
 }
 
-.header h1{
-  background-color: #1a1a4a;
-  color: #F76C6C;
-  height: 3%;
+
+
+.nav {
+  background-image: linear-gradient(#F76C6C, #1a1a4a);
+  color: #1a1a4a;
+  height: 12%;
 }
 
 .nav h1{
-  background-color: #1a1a4a;
-  color: #F76C6C;
+  color: #1a1a4a;
+}
+
+.nav-item {
+  color: #1a1a4a;
 }
 
 .link {
-  color: #F76C6C
+  background-color: #F76C6C;
+  color: #1a1a4a;
 }
 
 a {
@@ -53,10 +62,18 @@ a {
 h1 {
   color: #F8E9A1
 }
+/* 
+.card-background {
+  background-color: #C5D8D1;
+} */
+
+.mask{
+  background-color: #C5D8D1
+}
 
 
-
-.footer {
-  background-color: gray;
-  color: white;
+.footer-container {
+  background-color: #F76C6C;
+  color: #1a1a4a;
+  
 }
